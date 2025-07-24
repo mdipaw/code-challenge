@@ -1,7 +1,7 @@
 import express, { Express } from 'express';
 import request from 'supertest';
 import routeResource from '../routes/resource.route';
-import { services as ServicesType } from '../services';
+import { Services as ServicesType } from '../services';
 
 const mockServices: ServicesType = {
     resourceService: {

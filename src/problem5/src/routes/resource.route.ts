@@ -1,7 +1,7 @@
 import { Router, Request, Response, IRouter } from 'express';
-import { services } from '../services';
+import { Services } from '../services';
 
-const resourceRoute = (router: IRouter, services: services): Router => {
+const resourceRoute = (router: IRouter, services: Services): Router => {
     router.post('/', async (req: Request, res: Response) => {
         const { name } = req.body;
         if (typeof name !== 'string' || name.trim() === '') {
